@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Improved Simple Wall Clock</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+
+            .clock {
+                width: 300px;
+                height: 300px;
+                background: white;
+                border: 5px solid black;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            .number {
+                position: absolute;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .n12 { top: 20px; left: 150px; transform: translateX(-50%); }
+            .n1  { top: 55px; left: 220px; transform: translate(-50%, -50%); }
+            .n2  { top: 95px; left: 260px; transform: translate(-50%, -50%); }
+            .n3  { top: 150px; left: 280px; transform: translate(-50%, -50%); }
+            .n4  { top: 205px; left: 260px; transform: translate(-50%, -50%); }
+            .n5  { top: 250px; left: 220px; transform: translate(-50%, -50%); }
+            .n6  { top: 280px; left: 150px; transform: translate(-50%, -50%); }
+            .n7  { top: 250px; left: 80px; transform: translate(-50%, -50%); }
+            .n8  { top: 205px; left: 40px; transform: translate(-50%, -50%); }
+            .n9  { top: 150px; left: 20px; transform: translate(-50%, -50%); }
+            .n10 { top: 95px; left: 40px; transform: translate(-50%, -50%); }
+            .n11 { top: 55px; left: 80px; transform: translate(-50%, -50%); }
+
+            .center-dot {
+                width: 12px;
+                height: 12px;
+                background: black;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clock">
+            <div class="number n12">12</div>
+            <div class="number n1">1</div>
+            <div class="number n2">2</div>
+            <div class="number n3">3</div>
+            <div class="number n4">4</div>
+            <div class="number n5">5</div>
+            <div class="number n6">6</div>
+            <div class="number n7">7</div>
+            <div class="number n8">8</div>
+            <div class="number n9">9</div>
+            <div class="number n10">10</div>
+            <div class="number n11">11</div>
+            <div class="center-dot"></div>
+        </div>
+
+    </body>
+</html>
